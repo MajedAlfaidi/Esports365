@@ -1,0 +1,22 @@
+@page
+@{ Layout = null; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Esports365 — student esports team tracker, fixtures and demo results">
+<title>Esports365 | Dashboard</title>
+<link rel="stylesheet" href="/css/site.css">
+<style> .course-demo-label { letter-spacing: .03em; } </style>
+<script src="/js/site.js" defer></script>
+</head>
+<body data-page="home" style="--page-accent:#f5b942">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header"><div class="header-inner"><div class="brand"><img class="brand-map" src="/img/esports-badge.svg" width="240" height="72" alt="Esports365 project logo — click to learn about us" usemap="#brand-map"><map name="brand-map"><area shape="rect" coords="0,0,240,72" href="/About" alt="About Esports365"></map></div><nav class="menu" aria-label="Main navigation"><a href="/Home" aria-current="page" >Home</a><a href="/Matches" >Matches</a><a href="/ChooseTeam" >Favorite Team</a><a href="/About" >About Us</a><a href="/" >Login</a><a href="/SignUp" class="menu-cta">Sign Up</a></nav></div></header>
+<main id="main-content" class="container"><section class="hero" id="top"><div class="eyebrow">Your esports scoreboard • Course demo</div><h1>Every match.<br><span style="color:var(--gold)">Your team. Your game.</span></h1><p class="lead">Esports365 brings your favorite esports teams, fixtures and results into one easy-to-follow dashboard. Choose a game and follow the teams you care about.</p><div class="hero-actions"><a class="btn btn-primary" href="/ChooseTeam">Choose your team</a><a class="btn" href="/Matches">Explore matches</a></div></section>
+<div class="demo-banner" role="note">Academic prototype: teams, fixtures, dates, scores and broadcast platforms shown here are illustrative demo data — not real or live sports information.</div>
+<section class="section-block" aria-labelledby="overview-heading"><h2 id="overview-heading">Your dashboard</h2><div class="grid"><article class="card card-accent"><span class="muted small">Favorite team</span><div id="favorite-name" class="team-name">Not selected yet</div><p id="favorite-game" class="muted small">Choose your favorite team</p><a href="/ChooseTeam">Change selection</a></article><article class="card"><span class="muted small">Games supported</span><div id="total-games" class="stat-number">3</div><span class="muted small">VALORANT, Rocket League, Counter-Strike 2</span></article><article class="card"><span class="muted small">Upcoming fixtures (demo)</span><div id="total-upcoming" class="stat-number">3</div><a href="/Matches">Full schedule</a></article></div></section>
+<section class="section-block" id="upcoming" aria-labelledby="upcoming-heading"><div class="section-header"><h2 id="upcoming-heading">Upcoming matches</h2><a href="/Matches">See all matches</a></div><div id="upcoming-cards" class="grid"><p class="muted">Loading demo match cards...</p></div></section>
+<section class="section-block" id="results" aria-labelledby="results-heading"><h2 id="results-heading">Latest results</h2><div class="table-wrap"><table><caption>Recent illustrative esports results</caption><thead><tr><th>Game</th><th>Match</th><th>Score</th><th>Date</th></tr></thead><tbody id="results-body"><tr><td colspan="4">Loading demo results...</td></tr></tbody></table></div><p class="small muted">Go to <a href="#top">top of page</a> · Local page link example.</p></section></main>
+<footer class="footer"><div class="footer-inner"><span>© 2026 Esports365 · CPIS358 university course project</span><span><a href="/About">About Us</a><a href="/Matches">Matches</a><a href="/Home#top">Back to top</a></span></div></footer>
+</body></html>

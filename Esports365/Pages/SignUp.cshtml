@@ -1,87 +1,18 @@
-﻿@page
-
-@{
-    Layout = null;
-}
-
+@page
+@{ Layout = null; }
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-
-    <title>Esports 365 - Sign Up</title>
-
-    <link rel="stylesheet" href="~/css/site.css">
-
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Esports365 — student esports team tracker, fixtures and demo results">
+<title>Esports365 | Sign Up</title>
+<link rel="stylesheet" href="/css/site.css">
+<style> .course-demo-label { letter-spacing: .03em; } </style>
+<script src="/js/site.js" defer></script>
 </head>
-
-<body>
-
-    <div class="login-container">
-
-        <div class="login-card">
-
-            <h1>ESPORTS 365</h1>
-
-            <h2>Create Account</h2>
-
-            <p class="subtitle">
-                Join Esports 365 and follow your favorite teams.
-            </p>
-
-            <form>
-
-                <label for="name">Full Name:</label>
-
-                <input type="text"
-                       id="name"
-                       name="name"
-                       placeholder="Enter your full name"
-                       required>
-
-                <label for="email">Email:</label>
-
-                <input type="email"
-                       id="email"
-                       name="email"
-                       placeholder="name@example.com"
-                       required>
-
-                <label for="password">Password:</label>
-
-                <input type="password"
-                       id="password"
-                       name="password"
-                       placeholder="Create a password"
-                       required>
-
-                <label for="confirmPassword">Confirm Password:</label>
-
-                <input type="password"
-                       id="confirmPassword"
-                       name="confirmPassword"
-                       placeholder="Confirm your password"
-                       required>
-
-                <input type="submit"
-                       value="Create Account"
-                       class="login-button">
-
-            </form>
-
-            <p class="signup">
-
-                Already have an account?
-
-                <a href="/">
-                    Sign In
-                </a>
-
-            </p>
-
-        </div>
-
-    </div>
-
-</body>
-</html>
+<body data-page="signup" style="--page-accent:#f5b942">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header"><div class="header-inner"><div class="brand"><img class="brand-map" src="/img/esports-badge.svg" width="240" height="72" alt="Esports365 project logo — click to learn about us" usemap="#brand-map"><map name="brand-map"><area shape="rect" coords="0,0,240,72" href="/About" alt="About Esports365"></map></div><nav class="menu" aria-label="Main navigation"><a href="/Home" >Home</a><a href="/Matches" >Matches</a><a href="/ChooseTeam" >Favorite Team</a><a href="/About" >About Us</a><a href="/" >Login</a><a href="/SignUp" aria-current="page" class="menu-cta">Sign Up</a></nav></div></header>
+<main id="main-content" class="container"><div class="login-container"><section class="login-card"><h1>ESPORTS 365</h1><h2>Create Account</h2><p class="subtitle">Explore teams and matches in the student demo.</p><form id="auth-form" data-next="/ChooseTeam"><label for="name">Full name</label><input type="text" id="name" name="name" placeholder="Enter your name" required autocomplete="name"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="name@example.com" required autocomplete="email"><label for="password">Password</label><input type="password" id="password" name="password" placeholder="At least 6 characters" minlength="6" autocomplete="new-password" required><label for="confirmPassword">Confirm password</label><input type="password" id="confirmPassword" name="confirmPassword" placeholder="Repeat the password" minlength="6" required><input type="submit" value="Continue to demo" class="login-button"><p id="auth-feedback" class="feedback" role="status" hidden></p></form><p class="signup">Already have an account? <a href="/">Sign In</a></p><p class="helper">Prototype only — this does not create a real account and passwords are not stored.</p></section></div></main>
+<footer class="footer"><div class="footer-inner"><span>© 2026 Esports365 · CPIS358 university course project</span><span><a href="/About">About Us</a><a href="/Matches">Matches</a><a href="/Home#top">Back to top</a></span></div></footer>
+</body></html>

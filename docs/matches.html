@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Esports365 — student esports team tracker, fixtures and demo results">
+<title>Esports365 | Matches</title>
+<link rel="stylesheet" href="assets/site.css">
+<style> .course-demo-label { letter-spacing: .03em; } </style>
+<script src="assets/site.js" defer></script>
+</head>
+<body data-page="matches" style="--page-accent:#f5b942">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header"><div class="header-inner"><div class="brand"><img class="brand-map" src="assets/esports-badge.svg" width="240" height="72" alt="Esports365 project logo — click to learn about us" usemap="#brand-map"><map name="brand-map"><area shape="rect" coords="0,0,240,72" href="about.html" alt="About Esports365"></map></div><nav class="menu" aria-label="Main navigation"><a href="index.html" >Home</a><a href="matches.html" aria-current="page" >Matches</a><a href="choose-team.html" >Favorite Team</a><a href="about.html" >About Us</a><a href="login.html" >Login</a><a href="signup.html" class="menu-cta">Sign Up</a></nav></div></header>
+<main id="main-content" class="container"><section class="hero"><div class="eyebrow">Fixtures • Results • Streams</div><h1>Esports matches</h1><p class="lead">Explore the demonstration schedule for past and upcoming matches. Each match shows a game, matchup, date, time and example streaming platform.</p></section>
+<div class="demo-banner">All matches and broadcast listings are sample data for the assignment, not verified real events.</div>
+<section class="section-block" id="schedule"><div class="section-header"><h2>Match schedule</h2><span id="match-count" class="section-note">Loading...</span></div><form class="filters" role="search" onsubmit="return false"><div class="field"><label for="match-search">Search team or platform</label><input class="search" id="match-search" name="query" type="search" list="team-suggestions" placeholder="Search for a team..." autocomplete="off"><datalist id="team-suggestions"></datalist></div><div class="field"><label for="match-game">Game</label><select id="match-game"><option value="">All games</option><option>VALORANT</option><option>Rocket League</option><option>Counter-Strike 2</option></select></div><div class="field"><label for="match-status">Match status</label><select id="match-status"><option value="">Upcoming + past</option><option value="upcoming">Upcoming</option><option value="completed">Past results</option></select></div></form><div id="matches-grid" class="grid" aria-live="polite"><p class="muted">Loading demo fixtures...</p></div></section></main>
+<footer class="footer"><div class="footer-inner"><span>© 2026 Esports365 · CPIS358 university course project</span><span><a href="about.html">About Us</a><a href="matches.html">Matches</a><a href="index.html#top">Back to top</a></span></div></footer>
+</body></html>
